@@ -1,0 +1,333 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO6q811B8YQY8h0rM/9CX5L",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Dhairyasummi/python/blob/main/Untitled0.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oARzOevBv2HA",
+        "outputId": "a22291fb-47b3-444f-989e-b613b03824f1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "True\n"
+          ]
+        }
+      ],
+      "source": [
+        "a = 10\n",
+        "b = 10\n",
+        "print(a == b)\n",
+        "print(a != b)\n",
+        "print(a > b)\n",
+        "print(a < b)\n",
+        "print(a >= b)\n",
+        "print(a <= b)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 'dhairya'\n",
+        "b = 'summi'\n",
+        "print(a+' '+b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GroageUeJDnO",
+        "outputId": "d64e4774-3604-43ce-a11e-0eb967d1980f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "dhairya summi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 'dhairya '\n",
+        "print(a*10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ULDYgAKPJctK",
+        "outputId": "4485ad50-cf35-4412-804a-d1c13b3d1f4e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "dhairya dhairya dhairya dhairya dhairya dhairya dhairya dhairya dhairya dhairya \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 'dhairya summi'\n",
+        "print(len(a))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HQ1g5Y6PJi_b",
+        "outputId": "28d69595-f3eb-4ac8-ff5f-70368bba5861"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "13\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 'Dhairya summi'\n",
+        "a.lower() #they are called methord which is different from functions"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "uxl7zFd-JqoU",
+        "outputId": "4285cb1b-a6ed-4fe8-efb7-3a368bf902ae"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'dhairya summi'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 'dhairya summi'\n",
+        "a.upper() #they are called methord which is different from functions"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "WW_GLCTMKL3q",
+        "outputId": "547bbc31-61df-4ded-fa9c-8d9d37385cc3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'DHAIRYA SUMMI'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(a[0].upper()+a[1:])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "y3ooqYlaKQIN",
+        "outputId": "4fa6fea1-be33-41bc-b167-7b0e071cf4b9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Dhairya summi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 'methord index'\n",
+        "print(a.count('d')) #count count the occurence of the character"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OnQvhE6eLjdi",
+        "outputId": "91505520-b8d6-453b-e89c-b303b96205d7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 'dhairya summi'\n",
+        "print(a.find('d'))  # find returns the index of first occurence of the string present in given string"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CG8dat2mLz0d",
+        "outputId": "8cdb471c-282e-4f95-93e0-861b935bb58c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 'hello'\n",
+        "a.replace('l','c') # this methord takes 2 arguments and replace this"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "-3-pf17KMI9p",
+        "outputId": "b046c193-f23c-464d-dec3-ded3c2b89b9f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'hecco'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "aa = 'hello'\n",
+        "a.replace('lo','ko') # this methord takes 2 arguments and replace this , this one changes the last l"
+      ],
+      "metadata": {
+        "id": "UM-zjSNYMtd-",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "outputId": "963fa27f-b460-45e7-bb5b-3b9329920ae9"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'helko'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    }
+  ]
+}
